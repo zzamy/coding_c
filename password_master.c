@@ -2,6 +2,7 @@
 #include <time.h>
 
 //함수 선언은 라이브러리 호출 이후 바로 나와야 함
+/* 
 void p(int num);
 
 //함수 정의는 항상 선언 이후 사용 필요, 단 선언뒤 어느 위치든 큰 상관은 없음
@@ -26,4 +27,18 @@ int main(void) {
     p(num);
     
     return 0;
+} */
+
+//함수의 형태 : 반환형 함수이름(전달값){}
+
+void function_without_retrun();
+
+int main(void){
+    function_without_retrun();
+
+    return 0;
+}
+
+void function_without_retrun(){
+    printf("반환값이 없는 함수 입니다.");
 }
