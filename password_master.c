@@ -46,11 +46,14 @@ void function_without_retrun(){
     printf("반환값이 없는 함수 입니다.");
 } */
 
+//선언 모음
 //반환값이 있는 함수 
 int function_with_retrun();
 void p(int num);
 //파라메타 값이 없는 함수
 void function_without_params();
+//전달값이 있는 함수 (반환 X, 전달값을 받음)
+void function_with_params(int no1, int no2, int no3);
 
 //반환값이 있는 함수
 /*int main(void){
@@ -59,11 +62,18 @@ void function_without_params();
     return 0;
 }*/
 
-int main(void){
+
+//전달값이 없는 함수
+/* int main(void){
     function_without_params();
     return 0;
-}
+} */
 
+//전달값이 있는 함수
+int main(void){
+    function_with_params(1, 2, 3);
+    return 0;
+} 
 
 //정의 모음
 int function_with_retrun(){
@@ -77,4 +87,9 @@ void p(int num){
 //전달값(parametas)이 없는 함수
 void function_without_params(){
     printf("전달값이 없는 함수 입니다. \n");
+}
+
+//전달값이 있는 함수
+void function_with_params(int no1, int no2, int no3){
+    printf("전달 값이 있는 함수이며, 전달값은 %d, %d, %d 입니다 \n", no1, no2, no3);
 }
