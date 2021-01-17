@@ -31,6 +31,9 @@ int main(void) {
 
 //함수의 형태 : 반환형 함수이름(전달값){}
 
+
+//반환값이 없는 함수
+/* 
 void function_without_retrun();
 
 int main(void){
@@ -41,4 +44,23 @@ int main(void){
 
 void function_without_retrun(){
     printf("반환값이 없는 함수 입니다.");
+} */
+
+//반환값이 있는 함수 
+int function_with_retrun();
+void p(int num);
+
+int main(void){
+    int ret = function_with_retrun();
+    p(ret);
+    return 0;
+}
+
+int function_with_retrun(){
+    printf("반환값이 있는 함수 입니다. \n");
+    return 10;
+}
+
+void p(int num){
+    printf("num 은 %d 입니다 \n", num);
 }
