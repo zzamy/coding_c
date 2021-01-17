@@ -49,13 +49,23 @@ void function_without_retrun(){
 //반환값이 있는 함수 
 int function_with_retrun();
 void p(int num);
+//파라메타 값이 없는 함수
+void function_without_params();
 
-int main(void){
+//반환값이 있는 함수
+/*int main(void){
     int ret = function_with_retrun();
     p(ret);
     return 0;
+}*/
+
+int main(void){
+    function_without_params();
+    return 0;
 }
 
+
+//정의 모음
 int function_with_retrun(){
     printf("반환값이 있는 함수 입니다. \n");
     return 10;
@@ -63,4 +73,8 @@ int function_with_retrun(){
 
 void p(int num){
     printf("num 은 %d 입니다 \n", num);
+}
+//전달값(parametas)이 없는 함수
+void function_without_params(){
+    printf("전달값이 없는 함수 입니다. \n");
 }
