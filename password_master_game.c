@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 
 int getRandomNumber(int level);
 void showQuestion(int level, int num1, int num2);
 void success();
 void fail();
 
-int main_password(void)
+int main_Passwordmaster(void)
 {
     //문이 5개가 있고 각 문마다 점점 어려운 수식 퀴즈가 출력 (랜덤)
     //맞히면 통과, 틀리면 실패
