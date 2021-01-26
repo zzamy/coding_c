@@ -46,6 +46,7 @@ void function_without_retrun(){
     printf("반환값이 없는 함수 입니다.");
 } */
 
+
 //선언 모음
 //반환값이 있는 함수 
 int function_with_retrun();
@@ -56,6 +57,10 @@ void function_without_params();
 void function_with_params(int no1, int no2, int no3);
 
 int apple(int total, int ate); //전체 토탈 개에서 잇 개를 먹고 남은 수를 반환
+int add(int num1, int num2);
+
+int main(void)
+{
 
 //반환값이 있는 함수
 /*int main(void){
@@ -76,15 +81,15 @@ int apple(int total, int ate); //전체 토탈 개에서 잇 개를 먹고 남�
     function_with_params(1, 2, 3);
     return 0;
 } */
-
+/*
 //전달값도 받고 반환값도 보내주는 함수
 int main(void){
     int ret = apple(5, 2); //5개의 사과 중에서 2개를 먹었고 남은 숫자를 말하도록 만들것임
     printf("사과 5개중에 2개를 먹으면? %d가 남아요 \n", ret);
     return 0;
 }
-
-
+*/
+/*
 //정의 모음
 int function_with_retrun(){
     printf("반환값이 있는 함수 입니다. \n");
@@ -98,14 +103,33 @@ void p(int num){
 void function_without_params(){
     printf("전달값이 없는 함수 입니다. \n");
 }
-
+*/
+/*
 //전달값이 있는 함수
 void function_with_params(int no1, int no2, int no3){
     printf("전달 값이 있는 함수이며, 전달값은 %d, %d, %d 입니다 \n", no1, no2, no3);
 }
+*/
 
+
+/*
 //전달값과 반환 값이 있는 함수
 int apple(int total, int ate){
     printf("전달값과 반환값이 있습니다. \n");
     return total-ate;
+} */
+
+//계산기 함수
+
+    int num = 2;
+    num = add(num, 3);
+    p(num); 
+
+    return 0;
+
+}
+
+int add(int num1, int num2)
+{
+    return num1+num2;
 }
